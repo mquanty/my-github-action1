@@ -8,7 +8,7 @@ def sendtelegrammsg(msg, toid, botid):
 
 def main():
   toid = os.environ['TG_ID']
-  botid = os.environ['TG_BOT']
+  btid = os.environ['TG_BOT']
   sendtelegrammsg('hello', toid, btid)
 
 if __name__ == '__main__':
