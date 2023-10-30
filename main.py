@@ -1,6 +1,6 @@
 import requests, json, os, traceback
 
-chromeuseragent =  "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/507.12 (KHTML, like Gecko) Chrome/25.31.00.00 Safari/507.12" #"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:21.0) Gecko/20100001" #'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'
+chromeuseragent =  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36' #"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/507.12 (KHTML, like Gecko) Chrome/25.31.00.00 Safari/507.12" #"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:21.0) Gecko/20100001" #'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'
 naukri_accesstoken, naukri_logouttoken = '', ''
 UPDATE_PROFILE = True
 
