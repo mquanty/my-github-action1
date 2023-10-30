@@ -19,4 +19,7 @@ jobs:
           pip install -r requirements.txt
     env:
       TG_BOT: ${{ secrets.MY_TGBOT }}
-      run: python main.py
+      TG_ID: ${{ secrets.MY_TGID }}
+    
+      run: |
+        python main.py --toid "$TG_ID" --btid "$TG_BOT"
