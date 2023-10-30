@@ -70,6 +70,8 @@ def naukri():
         userinfo = result1['userInfo']
         telegramMessage += f"Naukri Login from {userinfo['ipAddress']}\n"
 
+        raise Exception("skipped\n")
+        
         # DASHBOARD
         x8 = s.get(NAUKRI_dashboard_url, headers={
             'content-type': 'application/json',
