@@ -1,4 +1,4 @@
-import requests, json, os
+import requests, json, os, traceback
 
 chromeuseragent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'
 naukri_accesstoken, naukri_logouttoken = '', ''
@@ -12,6 +12,7 @@ NAUKRI_update_url    = 'https://www.naukri.com/servicegateway-mynaukri/resman-ag
 to_update = {}
 
 def sendTelegramMsg(msg, toid=None, botid=None):
+    if msg is None or msg == '': return
     if not botid: botid = os.environ['TG_BT']
     if not toid: toid = os.environ['TG_ID']
     url = f'https://api.telegram.org/bot{botid}/sendMessage?chat_id={toid}&text={msg}'
@@ -151,7 +152,8 @@ def naukri():
             #print('logout successful')
             telegramMessage += 'Naurki Logout Successful'
     except Exception as e:
-        sendTelegramMsg(e)
+        errorstring = f"Exception: [{type(e).__name__}] at line {e.__traceback__.tb_lineno} of {__file__}: {e}"
+        sendTelegramMsg(errorstring)
     finally:
         sendTelegramMsg(telegramMessage)
 
