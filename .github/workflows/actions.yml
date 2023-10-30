@@ -22,7 +22,9 @@ jobs:
             pip install -r requirements.txt
       - name: execute py script # run main.py
         env:
-          TG_BOT: ${{ secrets.MY_TGBOT }}
+          TG_BT: ${{ secrets.MY_TGBOT }}
           TG_ID: ${{ secrets.MY_TGID }}
+          NK_PW: ${{ secrets.MY_NKPW }}
+          NK_ID: ${{ secrets.MY_NKID }}
         run: python main.py
         
