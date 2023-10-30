@@ -25,6 +25,6 @@ jobs:
           TG_BT: ${{ secrets.MY_TGBOT }}
           TG_ID: ${{ secrets.MY_TGID }}
           NK_PW: ${{ secrets.MY_NKPW }}
-          NK_ID: ${{ secrets.MY_NKID }}
+          NK_ID: ${{ secrets.MY_NKUN }}
         run: python main.py
         
