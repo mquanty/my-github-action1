@@ -54,6 +54,7 @@ def naukri():
             'systemid': 'jobseeker',
             'clientid': 'd3skt0p'
         })
+        sendTelegramMsg(x1.text)
         result1 = json.loads(x1.text)
         cookies = result1['cookies']
         searchcookie, nauk_rt, nauk_sid, nauk_otl = '', '', '', ''
