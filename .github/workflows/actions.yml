@@ -20,6 +20,4 @@ jobs:
     env:
       TG_BOT: ${{ secrets.MY_TGBOT }}
       TG_ID: ${{ secrets.MY_TGID }}
-    
-      run: |
-        python main.py --toid "$TG_ID" --btid "$TG_BOT"
+      run: python main.py
