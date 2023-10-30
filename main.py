@@ -1,4 +1,4 @@
-import requests
+import requests, os
 #from requests_toolbelt import MultipartEncoder
 
 def sendtelegrammsg(msg, toid, botid):
