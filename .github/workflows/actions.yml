@@ -27,4 +27,3 @@ jobs:
           NK_PW: ${{ secrets.MY_NKPW }}
           NK_ID: ${{ secrets.MY_NKUN }}
         run: python main.py
-        
