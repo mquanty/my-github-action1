@@ -160,4 +160,5 @@ def naukri():
         sendTelegramMsg(telegramMessage)
 
 if __name__ == '__main__':
-    naukri()
+    #naukri()
+    sendTelegramMsg('hello')
