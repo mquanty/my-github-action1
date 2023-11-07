@@ -5,7 +5,7 @@ name: run main.py
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: '* * * */2 *' # runs every 10mins
+    - cron: '* * * 2 *' # runs every 10mins
 jobs:
   build:
     runs-on: windows-latest #ubuntu-latest
